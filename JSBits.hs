@@ -10,7 +10,8 @@ import Game
 import GHCJS.Marshal
 import GHCJS.Types
 import GHCJS.Foreign
-
+foreign import javascript unsafe "window.cordova ? true : false"
+    cordova :: Bool
 foreign import javascript unsafe "new Chartist.Line($1, $2, {axisX:{showGrid:false,showLabel:false},axisY:{showGrid:false}},{height:300,width:300});"
   gameChart :: JSString -> (JSRef a) -> IO ()
 
@@ -20,4 +21,5 @@ makeChart id games = do
 #else
 gameChart = error "gameChart: only available from JavaScript"
 makeChart = error "makeChart: only available from JavaScript"
+cordova = undefined
 #endif

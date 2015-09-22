@@ -37,12 +37,12 @@ data RoundMake = RoundMake
 data ScoreChart = ScoreChart [String] [Int]
   deriving (Show)
 instance ToJSON ScoreChart where
-  toJSON (ScoreChart ts ss) = object [(T.pack "labels") .= ts, (T.pack "series") .= [ss]]
+  toJSON (ScoreChart ts ss) = object [T.pack "labels" .= ts, T.pack "series" .= [ss]]
  
 getScoreChart :: [GameSave] -> ScoreChart
 getScoreChart gs = ScoreChart (map (show.gameSaveTime) gs) (map (scoreGame.gameSaveGame) gs)
 
-avg rs = realToFrac (sum rs) / (L.genericLength rs)
+avg rs = realToFrac (sum rs) / L.genericLength rs
 
 getRoundMake :: Round -> RoundMake
 getRoundMake r@(Round br d) = RoundMake (getMadeBaskets r) (length br) d
@@ -54,7 +54,7 @@ getAvgRoundPercents :: [GameSave] -> [RoundPercent]
 getAvgRoundPercents gs = map avgRPercents $ L.transpose rMakes
   where rMakes = map getRoundMakes gs
         avgRPercents :: [RoundMake] -> RoundPercent
-        avgRPercents rms = RoundPercent (100 * fromIntegral ((sum $ map roundMakeMakes rms)) / fromIntegral ((sum $ map roundMakeAttempts rms))) $ roundMakeDistance $ head rms
+        avgRPercents rms = RoundPercent (100 * fromIntegral (sum $ map roundMakeMakes rms) / fromIntegral (sum $ map roundMakeAttempts rms)) $ roundMakeDistance $ head rms
 
 bestScore :: [GameSave] -> Int
 bestScore [] = 0

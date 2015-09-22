@@ -20,7 +20,7 @@ router widget initVisibility inEvents outEvents  = do
 squash
   :: (Reflex t, MonadHold t f, Semigroup b1) =>
      b -> [Dynamic t (Event t b1)] -> f (Event t b)
-squash val events = fmap (const val) <$> switchPromptlyDyn <$> mconcatDyn events
+squash val events = fmap (const val) <$>  switchPromptlyDyn <$> mconcatDyn events
 
 visWidget :: (Monad m, Monoid a) => m a -> Bool -> m a
 visWidget w True = w

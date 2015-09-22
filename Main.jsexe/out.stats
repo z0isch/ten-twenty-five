@@ -2,21 +2,21 @@ code size summary per package:
 
 aeson_A3Q8o0n6gTvGxtLnrAP7gO:396971
 attop_0CrfXeJXtnDFx07RJOIVI4:121917
-base:                    684038
+base:                    684706
 bytes_7xzRCqmYKEUD9kT8JNNjd6:72645
 conta_5w3UY4chXx62LVUOUrXeRm:166065
 depen_3ZazWrAF611CC0pGA27xUj:2889
 depen_GZFfxs8A7WS3jvJthZg6p3:48011
 excep_AWkABrgH1SYHx3pOn9wWvv:4658
-ghc-prim:                34691
+ghc-prim:                34299
 ghcjs_6fO2sBDbxgl1lxlAeHzYMO:12083
-ghcjs_HXVFfu8XQIWJ1W77s2SHGo:143100
+ghcjs_HXVFfu8XQIWJ1W77s2SHGo:150351
 ghcjs_HwzX8eXAwveCUOoAWSdVDg:9646
 integer-gmp:             45798
 lens_FnNDPSQ6CRuDhOVbtmH9IW:458
-main:                    149266
-refle_9t02BzAPXu3JaZOnUuc2W2:514617
-refle_EQiEbrB4wNqBAh8sssC2yJ:462292
+main:                    159886
+refle_9t02BzAPXu3JaZOnUuc2W2:515504
+refle_EQiEbrB4wNqBAh8sssC2yJ:462834
 reftf_JOU40Nd0lxyACBtr3v80Qj:1202
 scien_ByY1YjgV4ZmIelx0FjPFUw:132983
 semig_KHEjMWYPeouHkFOkwHWqJ7:2225
@@ -73,7 +73,7 @@ base
     Foreign.Marshal.Array:              2052
     Foreign.Storable:                   2700
     GHC.Arr:                            3706
-    GHC.Base:                           18615
+    GHC.Base:                           19283
     GHC.Char:                           746
     GHC.Conc.Sync:                      8104
     GHC.Enum:                           26994
@@ -151,7 +151,7 @@ ghc-prim
     GHC.CString:                        4537
     GHC.Classes:                        27029
     GHC.IntWord64:                      146
-    GHC.Tuple:                          1490
+    GHC.Tuple:                          1098
     GHC.Types:                          1489
 
 ghcjs_6fO2sBDbxgl1lxlAeHzYMO
@@ -163,11 +163,12 @@ ghcjs_HXVFfu8XQIWJ1W77s2SHGo
     GHCJS.DOM.DOMWindow:                2090
     GHCJS.DOM.Document:                 3649
     GHCJS.DOM.Element:                  35946
+    GHCJS.DOM.EventM:                   729
     GHCJS.DOM.EventTargetClosures:      2050
     GHCJS.DOM.NamedNodeMap:             663
     GHCJS.DOM.Node:                     7584
     GHCJS.DOM.Storage:                  2232
-    GHCJS.DOM.Types:                    79106
+    GHCJS.DOM.Types:                    85628
 
 ghcjs_HwzX8eXAwveCUOoAWSdVDg
     GHCJS.Prim:                         8870
@@ -182,21 +183,21 @@ lens_FnNDPSQ6CRuDhOVbtmH9IW
 
 main
     Game:                               38720
-    JSBits:                             2533
-    Main:                               96404
+    JSBits:                             2668
+    Main:                               106889
     Router:                             6652
     Storage:                            4957
 
 refle_9t02BzAPXu3JaZOnUuc2W2
     Reflex.Dom.Class:                   24088
     Reflex.Dom.Internal:                118931
-    Reflex.Dom.Widget.Basic:            355447
+    Reflex.Dom.Widget.Basic:            356334
     Reflex.Dom.Widget.Input:            16151
 
 refle_EQiEbrB4wNqBAh8sssC2yJ
     Data.Functor.Misc:                  8791
     Reflex.Class:                       24087
-    Reflex.Dynamic:                     58636
+    Reflex.Dynamic:                     59178
     Reflex.Host.Class:                  2195
     Reflex.Spider.Internal:             368583
 
@@ -260,5 +261,5 @@ vecto_EcjDyDlwiMg9atEfp9gJxH
 
 
 
-packed metadata: 627925
+packed metadata: 633156
 

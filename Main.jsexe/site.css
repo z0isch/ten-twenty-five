@@ -8,3 +8,6 @@ body {
 .center-text {
   text-align:center;
 }
+#navbar-brand{
+    height:34px;
+}
